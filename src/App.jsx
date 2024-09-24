@@ -8,6 +8,7 @@ import FavoritePage from './pages/FavoritePage';
 import Navbar from './components/Navbar';
 import SearchPage from './pages/SearchPage'; 
 import TodaysSpecial from './components/TodaysSpecial';
+import Footer from './components/Footer';
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
             <Route path="/search" element={<SearchPage />} />
             <Route path="/todays-special" element={<TodaysSpecial />} /> 
           </Routes>
+          <Footer />
         </FavoriteProvider>
       </RecipeProvider>
     </Router>

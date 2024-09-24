@@ -132,3 +132,27 @@
   align-items: center;
   padding: 80px 20px 20px;
 }
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 0 10px;
+  background-color: #f4da48;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+span {
+  font-size: 18px;
+}
