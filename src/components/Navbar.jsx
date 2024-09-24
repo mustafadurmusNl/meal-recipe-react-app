@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { FaHeart } from "react-icons/fa";
-import { useFavoriteRecipes } from "../hooks/useFavoriteRecipes"; 
 import "../css/Navbar.css";
 import logo from "../images/logo.png"; 
 import recipeBackground from "../images/recipe-background.jpg"; 
 import { useNavigate } from "react-router-dom"; 
+import { useFavoriteContext } from "../hooks/useFavoriteContext";
 
 function Navbar() {
 
   const navigate = useNavigate(); 
-  const { favorites } = useFavoriteRecipes();
+  const { favorites } = useFavoriteContext();
 
   return (
     <nav className="menu-bar">
@@ -40,12 +40,13 @@ function Navbar() {
             Favorites
             <FaHeart className="heart-icon" /> 
            
-            {favorites.length > 0 && (
+            {favorites && favorites.length > 0 && (
               <div className="favorite-count-circle">{favorites.length}</div>
             )}
           </div>
         </Link>
-        <Link to="/">todays special</Link>
+        <Link to="/">Login</Link>
+        <Link to="/todays-special">{"Today's Special"}</Link>
      
       </div>
     </nav>

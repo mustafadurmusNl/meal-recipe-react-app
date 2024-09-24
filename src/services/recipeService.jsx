@@ -26,3 +26,18 @@ export const getRecipeById = async (id) => {
     return null; 
   }
 };
+export const fetchRandomRecipe = async () => {
+  try {
+    const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
+    
+    // Check if the response contains meals
+    if (!response.data.meals || response.data.meals.length === 0) {
+      return null; // Return null if no meal is found
+    }
+
+    return response.data.meals[0]; // Return the random meal
+  } catch (error) {
+    console.error("Error fetching random recipe:", error);
+    return null; // Return null in case of error
+  }
+};

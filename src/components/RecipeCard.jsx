@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "../css/RecipeCard.css";
-import { useFavoriteRecipes } from "../hooks/useFavoriteRecipes";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { useFavoriteContext } from "../hooks/useFavoriteContext";
 
 function RecipeCard({ recipe }) {
-  const { isFavorite, toggleFavorite } = useFavoriteRecipes(); 
+  const { isFavorite, toggleFavorite } = useFavoriteContext();
 
   return (
     <div className="recipe-card">

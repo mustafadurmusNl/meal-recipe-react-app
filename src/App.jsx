@@ -7,6 +7,7 @@ import RecipeDetail from './components/RecipeDetail';
 import FavoritePage from './pages/FavoritePage'; 
 import Navbar from './components/Navbar';
 import SearchPage from './pages/SearchPage'; 
+import TodaysSpecial from './components/TodaysSpecial';
 function App() {
   return (
     <Router>
@@ -18,6 +19,7 @@ function App() {
             <Route path="/recipe/:id" element={<RecipeDetail />} />
             <Route path="/favorites" element={<FavoritePage />} />
             <Route path="/search" element={<SearchPage />} />
+            <Route path="/todays-special" element={<TodaysSpecial />} /> 
           </Routes>
         </FavoriteProvider>
       </RecipeProvider>

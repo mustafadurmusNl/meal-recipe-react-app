@@ -8,6 +8,7 @@ import { useRecipeContext } from "../hooks/useRecipeContext";
 
 function Home() {
   const { recipes, setRecipes } = useRecipeContext();
+  
   const [error, setError] = useState(null); // State for handling errors
   const [loading, setLoading] = useState(true); // State for loading
 
