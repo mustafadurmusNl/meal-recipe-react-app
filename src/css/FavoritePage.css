@@ -1,8 +1,24 @@
 .favorite-page {
-  margin-top: 150px;
-  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  color: rgb(56, 17, 17); 
+  background-image: url('../images/recipe-background.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
+  
+  display: flex; 
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 100vh;
+  justify-content: center; 
+  text-align: center; 
+  position: relative; 
+}
+
+
+.favorite-page h1,
+.favorite-page h2,
+.favorite-page p {
+  
+  margin: 10px 0; /* Adds margin for spacing */
 }

@@ -1,0 +1,34 @@
+.todays-special {
+  min-height: 100vh;
+  width: 100vw;
+  color: white;
+  background-image: url('../images/recipe-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.todays-special h1 {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.todays-special .recipe-name {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.todays-special p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  font-size: 18px;
+}

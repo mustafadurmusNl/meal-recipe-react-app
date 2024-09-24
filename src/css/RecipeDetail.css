@@ -1,13 +1,21 @@
 
 .recipe-detail {
-    max-width: 900px;  
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
+  position: relative; 
+    min-height: 100vh; 
+    width: 100vw; 
+    color: white; 
     
+   
+    background-image: url('../images/recipe-background.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
 
   }
   

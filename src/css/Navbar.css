@@ -63,7 +63,7 @@ cursor: pointer;
   color: rgb(244, 55, 12);
 
 }
-/* Media query for tablet screens */
+
 @media (max-width: 1024px) {
   .menu-bar {
     flex-direction: column; /* Stack elements vertically */

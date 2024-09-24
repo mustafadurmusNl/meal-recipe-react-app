@@ -3,7 +3,7 @@ import axios from 'axios';
 export async function getRecipes() {
   const response = await axios.get('https://www.themealdb.com/api/json/v1/1/search.php?s=');
   
-  // Check if the response contains meals
+  
   if (!response.data.meals) {
     return []; 
   }
@@ -30,14 +30,13 @@ export const fetchRandomRecipe = async () => {
   try {
     const response = await axios.get('https://www.themealdb.com/api/json/v1/1/random.php');
     
-    // Check if the response contains meals
     if (!response.data.meals || response.data.meals.length === 0) {
-      return null; // Return null if no meal is found
+      return null; 
     }
 
-    return response.data.meals[0]; // Return the random meal
+    return response.data.meals[0]; 
   } catch (error) {
     console.error("Error fetching random recipe:", error);
-    return null; // Return null in case of error
+    return null; 
   }
 };

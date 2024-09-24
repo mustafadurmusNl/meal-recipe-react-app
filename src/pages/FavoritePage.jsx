@@ -6,7 +6,7 @@ import recipeBackground from '../images/recipe-background.jpg';
 import { useFavoriteContext } from '../hooks/useFavoriteContext';
 function FavoritePage() {
   const { favorites } = useFavoriteContext();  
-
+  console.log(favorites);
   return (
     <div className='favorite-page'>
       <img src={recipeBackground} alt='recipe-background' className='recipe-background' />

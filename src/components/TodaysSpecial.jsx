@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchRandomRecipe } from "../services/recipeService"; // Adjust the path based on your project structure
 import RecipeCard from "../components/RecipeCard"; // Assuming you have a RecipeCard component
+import "../css/TodaysSpecial.css";
 function TodaysSpecial() {
   const [recipe, setRecipe] = useState(null);
 
