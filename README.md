@@ -5,7 +5,10 @@ Welcome to the **Meal Recipe App**! This web application helps users search, vie
 You can view the deployed application [here](https://durmus-meal-recipe.netlify.app/).
 
 
-![Logo](./src/images/readme-logo.png)
+![Logo](./public/home-page1.png)
+
+
+![Logo](./public/home-page2.png)
 
 
 
